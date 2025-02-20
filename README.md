@@ -21,7 +21,7 @@ This project is an **AI-powered Resume Screening System** that:
 
 ---
 
-## 🖥 How It Works
+##  How It Works
 1. **User downloads and extracts the dataset** from Kaggle.  
 2. **Fine-Tuned BERT Model**:
    - The system uses a **pre-trained BERT model** and fine-tunes it on the Kaggle dataset.
@@ -35,7 +35,7 @@ This project is an **AI-powered Resume Screening System** that:
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 - **Python 3.8+**  
 - **Fine-Tuned BERT (`sentence-transformers`)** – Trained on Kaggle resume dataset  
 - **Hugging Face Transformers** – Model inference  

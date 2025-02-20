@@ -64,16 +64,17 @@ Before running the application, you need to **fine-tune the BERT model** on the 
 - Once training is complete, **download the fine-tuned model**.
 - Move the **`bert_resume_finetuned/`** folder to your local `models/` directory.
 
-#### **4️ Load the Fine-Tuned Model**
-Modify `process_resumes.py` to load the fine-tuned model:
-```python
+#### **4️ Upload Resumes into the `resumes/` Folder**
+- Create a **`resumes/`** directory inside the project if it doesn’t exist:
+  ```bash
+  mkdir resumes
+
+### If the Script Doesn't Run use a Virtual Environment
 
 
 ##  Installation & Setup
-
 ### 1️ Clone the Repository
 ```bash
 git clone https://github.com/your-username/AI-Resume-Evaluation.git
 cd AI-Resume-Evaluation
-
 

@@ -51,28 +51,22 @@ This project is an **AI-powered Resume Screening System** that:
 ### **Step 1: Fine-Tune the BERT Model**
 Before running the application, you need to **fine-tune the BERT model** on the Kaggle resume dataset.
 
-#### **1️⃣ Download the Kaggle Resume Dataset**
+#### **1️ Download the Kaggle Resume Dataset**
 - Go to **[Kaggle Resume Dataset](https://www.kaggle.com/datasets/gauravduttakiit/resume-dataset)**
 - Click **Download**, extract the `.zip` file, and place it in the `data/` directory.
 
-#### **2️⃣ Run the Fine-Tuning Jupyter Notebook**
+#### **2️ Run the Fine-Tuning Jupyter Notebook**
 - Open **Google Colab** or Jupyter Notebook.
 - Upload and run **`fine_tune_bert.ipynb`** to train BERT on the resume dataset.
 - The model will be trained and saved in a folder called `bert_resume_finetuned`.
 
-#### **3️⃣ Download and Move the Model**
+#### **3️ Download and Move the Model**
 - Once training is complete, **download the fine-tuned model**.
 - Move the **`bert_resume_finetuned/`** folder to your local `models/` directory.
 
-#### **4️⃣ Load the Fine-Tuned Model**
+#### **4️ Load the Fine-Tuned Model**
 Modify `process_resumes.py` to load the fine-tuned model:
 ```python
-from transformers import AutoModel, AutoTokenizer
-
-model_path = "models/bert_resume_finetuned"
-tokenizer = AutoTokenizer.from_pretrained(model_path)
-model = AutoModel.from_pretrained(model_path)
-
 
 
 ##  Installation & Setup
